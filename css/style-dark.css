@@ -17,10 +17,10 @@ Table of Content
 	5. About Section
 	6. Resume Section
 	7. Portfolio Section
-	8. Blog Section
+	8. project Section
 	9. Contact Section
-	10. Blog Page Css
-	11. Blog List Css
+	10. project Page Css
+	11. project List Css
 	12. Preloader Css
 	13. Tooltip Css
 	14. Responsible Css
@@ -185,13 +185,13 @@ blockquote span img {
 }
 
 .pt-about .price .footer-price .btn-st:before,
-.pt-blog .blog-item .blog-btn .btn-st:before {
+.pt-project .project-item .project-btn .btn-st:before {
 	height: 165%;
     top: -30%;
 }
 
 .pt-about .price .footer-price .btn-st,
-.pt-blog .blog-item .blog-btn .btn-st {
+.pt-project .project-item .project-btn .btn-st {
     font-size: 16px;
 }
 
@@ -739,7 +739,7 @@ blockquote span img {
 #about:target .pt-home,
 #resume:target .pt-home,
 #portfolio:target .pt-home,
-#blog:target .pt-home,
+#project:target .pt-home,
 #contact:target .pt-home {
 	-webkit-filter: blur(3px);
 	-webkit-transition: all .5s ease;
@@ -749,7 +749,7 @@ blockquote span img {
 .pt-about,
 .pt-resume,
 .pt-portfolio,
-.pt-blog,
+.pt-project,
 .pt-contact {
 	background-color: #0e0f10;
 }
@@ -757,7 +757,7 @@ blockquote span img {
 #about:target .pt-about,
 #resume:target .pt-resume,
 #portfolio:target .pt-portfolio,
-#blog:target .pt-blog,
+#project:target .pt-project,
 #contact:target .pt-contact {
 	-webkit-transition-delay: .3s;
 			transition-delay: .3s;
@@ -816,13 +816,13 @@ blockquote span img {
 }
 
 .page .header-box,
-.blog-page .header-box {
+.project-page .header-box {
 	position: relative;
 	text-align: center;
 }
 
 .page .header-box:before,
-.blog-page .header-box:before {
+.project-page .header-box:before {
     content: '';
     position: absolute;
     width: 14px;
@@ -835,7 +835,7 @@ blockquote span img {
 }
 
 .page .header-box h3:before,
-.blog-page .header-box h3:before {
+.project-page .header-box h3:before {
 	content: '';
 	position: absolute;
 	width: 30px;
@@ -846,7 +846,7 @@ blockquote span img {
 }
 
 .page .header-box h3:after,
-.blog-page .header-box h3:after {
+.project-page .header-box h3:after {
 	content: '';
 	position: absolute;
 	width: 30px;
@@ -858,7 +858,7 @@ blockquote span img {
 
 .page .box-1,
 .page .box-2,
-.blog-page .box {
+.project-page .box {
 	position: relative;
 	padding: 30px;
 	background-color: #070708;
@@ -868,7 +868,7 @@ blockquote span img {
 
 .page .box-1:hover,
 .page .box-2:hover,
-.blog-page .box:hover {
+.project-page .box:hover {
 	-webkit-transform: translateY(-5px);
 			transform: translateY(-5px);
 }
@@ -876,11 +876,11 @@ blockquote span img {
 blockquote:after,
 .page .box-1:after,
 .page .box-2:after,
-.blog-page .box:after,
+.project-page .box:after,
 .pt-about .testimonial-item:after,
-.pt-blog .blog-item:after,
-.blog-list .blog-post .content .thumbnail:after,
-.blog-page .blog-comments ul li ul:after {
+.pt-project .project-item:after,
+.project-list .project-post .content .thumbnail:after,
+.project-page .project-comments ul li ul:after {
 	border-top: 35px solid #0e0f10;
 }
 
@@ -896,11 +896,11 @@ blockquote:after,
 blockquote:before,
 .page .box-1:before,
 .page .box-2:before,
-.blog-page .box:before,
+.project-page .box:before,
 .pt-about .testimonial-item:before,
-.pt-blog .blog-item:before,
-.blog-list .blog-post .content .thumbnail:before,
-.blog-page .blog-comments ul li ul:before {
+.pt-project .project-item:before,
+.project-list .project-post .content .thumbnail:before,
+.project-page .project-comments ul li ul:before {
 	border-bottom: 35px solid #0e0f10;
 }
 
@@ -923,11 +923,11 @@ blockquote:before,
 	border-bottom: 15px solid #070708;
 }
 
-.blog-list .side-left .tags ul li a:after {
+.project-list .side-left .tags ul li a:after {
 	border-top: 15px solid #0e0f10;
 }
 
-.blog-list .side-left .tags ul li a:before {
+.project-list .side-left .tags ul li a:before {
 	border-bottom: 15px solid #0e0f10;
 }
 
@@ -971,7 +971,7 @@ blockquote:before,
 #about:target .header-main ul li a,
 #resume:target .header-main ul li a,
 #portfolio:target .header-main ul li a,
-#blog:target .header-main ul li a,
+#project:target .header-main ul li a,
 #contact:target .header-main ul li a {
 	-webkit-transform: scale(.8);
 			transform: scale(.8);
@@ -980,7 +980,7 @@ blockquote:before,
 #about:target .icon-a,
 #resume:target .icon-r,
 #portfolio:target .icon-p,
-#blog:target .icon-b,
+#project:target .icon-b,
 #contact:target .icon-c {
 	color: #fff;
 	-webkit-transform: scale(1.3) !important;
@@ -1765,9 +1765,9 @@ blockquote:before,
 }
 
 /* ---------------------------------
-		8. Blog Section
+		8. project Section
 --------------------------------- */
-.pt-blog .blog-item {
+.pt-project .project-item {
 	position: relative;
 	padding: 0 20px 20px;
 	margin-bottom: 50px;
@@ -1776,36 +1776,36 @@ blockquote:before,
 			transition: all .3s ease-in-out;
 }
 
-.pt-blog .blog-item:hover {
+.pt-project .project-item:hover {
 	-webkit-transform: translateY(-3px) scale(1.01);
 			transform: translateY(-3px) scale(1.01);
 }
 
-.pt-blog .blog-item h4 {
+.pt-project .project-item h4 {
 	font-weight: 600;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 30px 0;
 }
 
-.pt-blog .blog-item .thumbnail {
+.pt-project .project-item .thumbnail {
 	position: relative;
 	overflow: hidden;
 	margin: 0 -20px;
 }
 
-.pt-blog .blog-item .thumbnail img {
+.pt-project .project-item .thumbnail img {
 	width: 100%;
 	-webkit-transition: all 1s;
     		transition: all 1s;
 }
 
-.pt-blog .blog-item:hover .thumbnail img {
+.pt-project .project-item:hover .thumbnail img {
 	-webkit-transform: scale(1.1);
 			transform: scale(1.1);
 }
 
-.pt-blog .blog-item .thumbnail .btn-play {
+.pt-project .project-item .thumbnail .btn-play {
 	position: absolute;
 	width: 60px;
 	height: 60px;
@@ -1817,7 +1817,7 @@ blockquote:before,
 			transition: all .3s ease-in-out;
 }
 
-.pt-blog .blog-item .thumbnail .btn-play:before {
+.pt-project .project-item .thumbnail .btn-play:before {
 	content: ' ';
 	position: absolute;
 	top: 0;
@@ -1832,7 +1832,7 @@ blockquote:before,
 	-webkit-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
 }
-.pt-blog .blog-item .thumbnail .btn-play:after {
+.pt-project .project-item .thumbnail .btn-play:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -1846,28 +1846,28 @@ blockquote:before,
 			transition: all .3s ease-in-out;
 }
 
-.pt-blog .blog-item .thumbnail .btn-play:hover:before {
+.pt-project .project-item .thumbnail .btn-play:hover:before {
 	-webkit-transform: scale(1.2, 1.2);
     		transform: scale(1.2, 1.2);
 }
 
-.pt-blog .blog-item .thumbnail .btn-play:hover:after {
+.pt-project .project-item .thumbnail .btn-play:hover:after {
 	border-color: transparent transparent transparent #0e0f10;
 }
 
-.pt-blog .blog-item ul {
+.pt-project .project-item ul {
 	position: relative;
 	display: block;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.pt-blog .blog-item ul li  {
+.pt-project .project-item ul li  {
     display: inline-block;
     font-size: 13px;
 }
 
-.pt-blog .blog-item ul li:not(:last-child):after {
+.pt-project .project-item ul li:not(:last-child):after {
 	content: '';
 	display: inline-block;
 	width: 5px;
@@ -1879,13 +1879,13 @@ blockquote:before,
 			border-radius: 50%;
 }
 
-.pt-blog .blog-item .blog-btn {
+.pt-project .project-item .project-btn {
 	position: relative;
     text-align: center;
     margin: 40px 0 10px;
 }
 
-.pt-blog .blog-item .blog-btn:before {
+.pt-project .project-item .project-btn:before {
     content: '';
     position: absolute;
 	height: 4px;
@@ -2012,9 +2012,9 @@ blockquote:before,
 }
 
 /* ---------------------------------
-		10. Blog Page Css
+		10. project Page Css
 --------------------------------- */
-.blog-page {
+.project-page {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -2024,7 +2024,7 @@ blockquote:before,
 	background-color: #0e0f10;
 }
 
-.blog-page .blog-nav {
+.project-page .project-nav {
 	position: fixed;
 	top: 20px;
 	-webkit-transform: translateX(-50%);
@@ -2037,7 +2037,7 @@ blockquote:before,
 	z-index: 99;
 }
 
-.blog-page .blog-nav a {
+.project-page .project-nav a {
 	position: relative;
 	height: 30px;
 	padding: 0 10px;
@@ -2047,49 +2047,49 @@ blockquote:before,
 	color: #fff;
 }
 
-.blog-page .blog-nav a:not(:last-child) {
+.project-page .project-nav a:not(:last-child) {
 	border-right:1px solid rgba(255,255,255,0.15);
 }
 
-.blog-page .blog-nav a:hover,
-.blog-page .blog-nav a:focus {
+.project-page .project-nav a:hover,
+.project-page .project-nav a:focus {
 	color: #fff;
 }
 
-.blog-page .blog-image {
+.project-page .project-image {
     -webkit-background-size: cover;
 			background-size: cover;
     background-position: center;
 }
 
-.blog-page .blog-container {
+.project-page .project-container {
 	position: absolute;
     margin: 0 auto;
 }
 
-.blog-page .blog-heading {
+.project-page .project-heading {
     text-align: center;
     letter-spacing: .5px;
 }
 
-.blog-page .blog-heading h2 {
+.project-page .project-heading h2 {
 	font-size: 40px;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
 
-.blog-page .blog-heading i {
+.project-page .project-heading i {
 	color: #fff;
 	font-size: 13px;
 	margin: 0 5px 0 10px;
 }
 
-.blog-page .blog-heading span {
+.project-page .project-heading span {
 	color: #fff;
 	font-size: 14px;
 }
 
-.blog-page .blog-heading span:after {
+.project-page .project-heading span:after {
 	content: '';
 	margin-left: 10px;
 	width: 5px;
@@ -2101,11 +2101,11 @@ blockquote:before,
 	vertical-align: middle;
 }
 
-.blog-page .blog-heading span:last-child:after {
+.project-page .project-heading span:last-child:after {
 	display: none;
 }
 
-.blog-page .blog-content p:first-child::first-letter {
+.project-page .project-content p:first-child::first-letter {
     font-size: 40px;
 	font-weight: 700;
     line-height: 1.2;
@@ -2114,15 +2114,15 @@ blockquote:before,
     padding-right: 15px;
 }
 
-.blog-page .blog-comments {
+.project-page .project-comments {
     margin: 0 40px;
 }
 
-.blog-page .blog-comments ul li {
+.project-page .project-comments ul li {
 	margin-bottom: 50px;
 }
 
-.blog-page .blog-comments ul li ul {
+.project-page .project-comments ul li ul {
 	position: relative;
     padding: 20px 20px 0;
     background-color: rgba(0, 0, 0, .5);
@@ -2130,22 +2130,22 @@ blockquote:before,
 	margin-top: 30px;
 }
 
-.blog-page .blog-comments ul .author-img {
+.project-page .project-comments ul .author-img {
 	float: left;
 	margin-right: 20px;
 }
 
-.blog-page .blog-comments ul li .author-img img {
+.project-page .project-comments ul li .author-img img {
 	-webkit-border-radius: 50%;
 			border-radius: 50%;
 	max-width: 70px;
 }
 
-.blog-page .blog-comments ul li .comment-text {
+.project-page .project-comments ul li .comment-text {
 	overflow: hidden;
 }
 
-.blog-page .blog-comments ul li .comment-text a {
+.project-page .project-comments ul li .comment-text a {
 	float: right;
 	font-size: 11px;
 	margin-right: 15px;
@@ -2155,20 +2155,20 @@ blockquote:before,
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.blog-page .blog-comments ul li .comment-text a i {
+.project-page .project-comments ul li .comment-text a i {
 	margin-right: 5px;
 }
 
-.blog-page .blog-comments ul li .comment-text h4 {
+.project-page .project-comments ul li .comment-text h4 {
 	font-weight: 600;
     margin-bottom: 5px;
 }
 
-.blog-page .blog-comments ul li .comment-text p {
+.project-page .project-comments ul li .comment-text p {
 	font-size: 15px;
 }
 
-.blog-page .blog-comments ul li .comment-text span {
+.project-page .project-comments ul li .comment-text span {
 	display: block;
 	color: #fff;
 	font-size: 12px;
@@ -2177,9 +2177,9 @@ blockquote:before,
 }
 
 /* ---------------------------------
-		11. Blog List Css
+		11. project List Css
 --------------------------------- */
-.blog-list {
+.project-list {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -2189,15 +2189,15 @@ blockquote:before,
 	background-color: #0e0f10;
 }
 
-.blog-list .blog-head {
+.project-list .project-head {
 	padding: 100px 0;
-	background-image: url(../img/blog/blog-page-img.jpg);
+	background-image: url(../img/project/project-page-img.jpg);
 	-webkit-background-size: cover;
 			background-size: cover;
 	background-position: center;
 }
 
-.blog-list .blog-head:before {
+.project-list .project-head:before {
 	content: '';
 	position: absolute;
 	height: 285px;
@@ -2209,7 +2209,7 @@ blockquote:before,
 	background-color: #12171b;
 }
 
-.blog-list .blog-head h2 {
+.project-list .project-head h2 {
 	text-align: center;
 	position: relative;
 	width: 90%;
@@ -2218,7 +2218,7 @@ blockquote:before,
 	margin-bottom: 15px;
 }
 
-.blog-list .blog-head .blog-breadcrumb {
+.project-list .project-head .project-breadcrumb {
 	position: relative;
 	width: 90%;
 	left: 10%;
@@ -2226,7 +2226,7 @@ blockquote:before,
 	margin: 0;
 }
 
-.blog-list .blog-head .blog-breadcrumb li {
+.project-list .project-head .project-breadcrumb li {
 	position: relative;
 	display: inline-block;
 	color: #fff;
@@ -2234,7 +2234,7 @@ blockquote:before,
 	padding-right: 10px;
 }
 
-.blog-list .blog-head .blog-breadcrumb li:after {
+.project-list .project-head .project-breadcrumb li:after {
 	position: absolute;
 	content: "\f105";
 	font-family: 'Font Awesome 5 Free';
@@ -2244,37 +2244,37 @@ blockquote:before,
 	color: #fff;
 }
 
-.blog-list .blog-head .blog-breadcrumb li:last-child::after {
+.project-list .project-head .project-breadcrumb li:last-child::after {
 	display: none;
 }
 
-.blog-list .blog-head .blog-breadcrumb li:last-child {
+.project-list .project-head .project-breadcrumb li:last-child {
 	padding-right: 0px;
 	margin-right: 0px;
 }
 
-.blog-list .blog-list-container {
+.project-list .project-list-container {
 	position: absolute;
 	padding: 100px 0;
     margin: 0 auto;
 }
 
-.blog-list .blog-post {
+.project-list .project-post {
 	position: relative;
 	margin-bottom: 40px;
 	border-bottom: 2px solid #070708;
 }
 
-.blog-list .blog-post .content {
+.project-list .project-post .content {
 	position: relative;
 }
 
-.blog-list .blog-post .content .thumbnail {
+.project-list .project-post .content .thumbnail {
 	position: relative;
 	overflow: hidden;
 }
 
-.blog-list .blog-post .content .thumbnail img {
+.project-list .project-post .content .thumbnail img {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -2282,21 +2282,21 @@ blockquote:before,
     		transition: all 1s;
 }
 
-.blog-list .blog-post:hover .content .thumbnail img {
+.project-list .project-post:hover .content .thumbnail img {
 	-webkit-transform: scale(1.1);
 			transform: scale(1.1);
 }
 
-.blog-list .blog-post .content .detalis {
+.project-list .project-post .content .detalis {
 	position: relative;
 	padding-top: 20px;
 }
 
-.blog-list .blog-post .content .detalis .meta {
+.project-list .project-post .content .detalis .meta {
 	position: relative;
 }
 
-.blog-list .blog-post .content .detalis .meta li {
+.project-list .project-post .content .detalis .meta li {
 	position: relative;
 	display: inline-block;
 	color: #fff;
@@ -2307,20 +2307,20 @@ blockquote:before,
 			transition: all .3s ease-in-out;
 }
 
-.blog-list .blog-post .content .detalis .meta li i {
+.project-list .project-post .content .detalis .meta li i {
 	position: relative;
 	color: #fff;
 	margin-right: 6px;
 }
 
-.blog-list .blog-post .content .detalis h4 {
+.project-list .project-post .content .detalis h4 {
 	position: relative;
 	color: #fff;
 	font-weight: 700;
 	margin-top: 15px;
 }
 
-.blog-list .blog-post .content .detalis .text {
+.project-list .project-post .content .detalis .text {
 	position: relative;
 	color: #fff;
 	font-size: 14px;
@@ -2328,27 +2328,27 @@ blockquote:before,
 	margin-bottom: 25px;
 }
 
-.blog-list .blog-post .content .detalis .btn-st {
+.project-list .project-post .content .detalis .btn-st {
 	margin: 10px 10px 50px 10px;
     font-size: 16px;
 }
 
-.blog-list .blog-post .content .detalis .btn-st:before {
+.project-list .project-post .content .detalis .btn-st:before {
 	background: #070708;
 }
 
 /* Pagination Style */
-.blog-list .pagination {
+.project-list .pagination {
     justify-content: center;
 }
 
-.blog-list .pagination li a:hover {
+.project-list .pagination li a:hover {
     background: #0e0f10;
     color: #fff !important;
     border: 1px solid transparent;
 }
 
-.blog-list .pagination li a {
+.project-list .pagination li a {
 	position: relative;
     display: inline-block;
     background: transparent;
@@ -2360,7 +2360,7 @@ blockquote:before,
     font-size: 14px;
 }
 
-.blog-list .pagination li.active a {
+.project-list .pagination li.active a {
     background: #070708;
     color: #fff;
     border: 1px solid transparent;
@@ -2368,16 +2368,16 @@ blockquote:before,
 
 /* SideBar Left */
 
-.blog-list .side-left {
+.project-list .side-left {
 	padding: 0 5px;
 }
 
-.blog-list .side-left h4 {
+.project-list .side-left h4 {
 	position: relative;
 	margin-bottom: 20px;
 }
 
-.blog-list .side-left h4:after {
+.project-list .side-left h4:after {
 	content: '';
 	position: absolute;
 	width: 40px;
@@ -2388,20 +2388,20 @@ blockquote:before,
 }
 
 /* Search Style */
-.blog-list .side-left .search {
+.project-list .side-left .search {
 	background: transparent;
 	padding: 5px 0;
 	margin-bottom: 50px;
 }
 
-.blog-list .side-left .search .input-group {
+.project-list .side-left .search .input-group {
     border: 1px solid #fff;
 	-webkit-border-radius: 50px;
     		border-radius: 50px;
     background: #070708;
 }
 
-.blog-list .side-left .search .input-group .input-group-text {
+.project-list .side-left .search .input-group .input-group-text {
     padding: 5px 0px 5px 15px;
     background: transparent;
     color: #fff;
@@ -2409,7 +2409,7 @@ blockquote:before,
     border: none;
 }
 
-.blog-list .side-left .search .input-group .form-control {
+.project-list .side-left .search .input-group .form-control {
 	font-size: 14px;
 	font-weight: 100;
 	color: #fff;
@@ -2421,25 +2421,25 @@ blockquote:before,
 }
 
 /* Categories and Archives */
-.blog-list .side-left .categories,
-.blog-list .side-left .archives {
+.project-list .side-left .categories,
+.project-list .side-left .archives {
 	margin-bottom: 50px;
 }
 
-.blog-list .side-left .categories ul,
-.blog-list .side-left .archives ul {
+.project-list .side-left .categories ul,
+.project-list .side-left .archives ul {
 	position: relative;
 }
 
-.blog-list .side-left .categories ul li,
-.blog-list .side-left .archives  ul li {
+.project-list .side-left .categories ul li,
+.project-list .side-left .archives  ul li {
 	position: relative;
 	padding: 15px 10px 15px 20px;
 	border-bottom: 1px solid #070708;
 }
 
-.blog-list .side-left .categories ul li:before,
-.blog-list .side-left .archives  ul li:before {
+.project-list .side-left .categories ul li:before,
+.project-list .side-left .archives  ul li:before {
 	content: '';
 	position: absolute;
 	width: 8px;
@@ -2453,19 +2453,19 @@ blockquote:before,
 			transition: all .3s ease-in-out;
 }
 
-.blog-list .side-left .categories ul li:hover:before,
-.blog-list .side-left .archives ul li:hover:before {
+.project-list .side-left .categories ul li:hover:before,
+.project-list .side-left .archives ul li:hover:before {
 	border: 4px solid #fff;
 	-webkit-box-shadow: 0 0 5px 0px #fff;
 			box-shadow: 0 0 5px 0px #fff;
 }
 
 /* Recent News */
-.blog-list .side-left .news {
+.project-list .side-left .news {
 	margin-bottom: 50px;
 }
 
-.blog-list .side-left .news li {
+.project-list .side-left .news li {
 	display: flex;
 	align-items: center;
 	margin: 0;
@@ -2473,7 +2473,7 @@ blockquote:before,
 	border-bottom: 1px solid #070708;
 }
 
-.blog-list .side-left .news img {
+.project-list .side-left .news img {
 	width: 47px;
 	height: 47px;
 	margin-right: 15px;
@@ -2481,33 +2481,33 @@ blockquote:before,
 			border-radius: 100%;
 }
 
-.blog-list .side-left .news h5 {
+.project-list .side-left .news h5 {
 	position: relative;
 	margin: 0;
 	padding-bottom: 7px;
 	font-size: 15px;
 }
 
-.blog-list .side-left .news p {
+.project-list .side-left .news p {
 	margin: 0;
 	color: #fff;
 	font-size: 12px;
 }
 
-.blog-list .side-left .news p i {
+.project-list .side-left .news p i {
 	margin-right: 5px;
 }
 
 /* Gallery */
-.blog-list .side-left .gallery {
+.project-list .side-left .gallery {
 	margin-bottom: 50px;
 }
 
-.blog-list .side-left .gallery ul {
+.project-list .side-left .gallery ul {
 	padding-top: 15px;
 }
 
-.blog-list .side-left .gallery ul li {
+.project-list .side-left .gallery ul li {
 	max-width: 70px;
 	position: relative;
 	display: inline-block;
@@ -2517,19 +2517,19 @@ blockquote:before,
 }
 
 /* Tags */
-.blog-list .side-left .tags {
+.project-list .side-left .tags {
 	margin-bottom: 50px;
 }
 
-.blog-list .side-left .tags ul li {
+.project-list .side-left .tags ul li {
     display: inline-block;
 }
 
-.blog-list .side-left .tags ul {
+.project-list .side-left .tags ul {
 	padding-top: 15px;
 }
 
-.blog-list .side-left .tags ul li a {
+.project-list .side-left .tags ul li a {
 	position: relative;
 	display: inline-block;
 	line-height: 24px;
@@ -2541,7 +2541,7 @@ blockquote:before,
 	border: 1px solid #070708;
 }
 
-.blog-list .side-left .tags ul li a:hover {
+.project-list .side-left .tags ul li a:hover {
 	background-color: #070708 !important;
 }
 
@@ -2761,7 +2761,7 @@ blockquote:before,
 	#about:target .pt-about,
 	#resume:target .pt-resume,
 	#portfolio:target .pt-portfolio,
-	#blog:target .pt-blog,
+	#project:target .pt-project,
 	#contact:target .pt-contact {
 		-webkit-transform: translateX(0);
     			transform: translateX(0);
@@ -2802,10 +2802,10 @@ blockquote:before,
 	.pt-about .testimonial-item {
 		padding: 20px;
 	}
-	.blog-nav {
+	.project-nav {
 		display: none;
 	}
-	.blog-page .blog-container {
+	.project-page .project-container {
 		position: relative;
 	}
 }
@@ -2873,20 +2873,20 @@ blockquote:before,
     	border-bottom: none;
         border-left: 1px solid #fff;
     }
-	.blog-page .blog-heading h2 {
+	.project-page .project-heading h2 {
 		font-size: 30px;
 	}
-	.blog-page .blog-heading span {
+	.project-page .project-heading span {
 		font-size: 13px;
 	}
-	.blog-page .blog-comments,
-	.blog-page .blog-comments ul li .comment-text a {
+	.project-page .project-comments,
+	.project-page .project-comments ul li .comment-text a {
 		margin: 0;
 	}
-	.blog-page .blog-comments ul li .comment-text p {
+	.project-page .project-comments ul li .comment-text p {
 		font-size: 13px;
 	}
-	.blog-page .blog-comments ul li ul {
+	.project-page .project-comments ul li ul {
 		margin-left: 30px;
 	}
 }

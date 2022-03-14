@@ -17,7 +17,7 @@
 .pt-about, 
 .pt-resume, 
 .pt-portfolio, 
-.pt-blog,
+.pt-project,
 .pt-contact {
 	-webkit-transform: translateX(200%) !important;
 	-ms-transform: translateX(200%) !important;
@@ -27,19 +27,19 @@
 #about:target .pt-about,
 #resume:target .pt-resume,
 #portfolio:target .pt-portfolio,
-#blog:target .pt-blog,
+#project:target .pt-project,
 #contact:target .pt-contact {
 	-webkit-transform: translateX(11.1%) !important;
 	-ms-transform: translateX(11.1%) !important;
 	transform: translateX(11.1%) !important;
 }
 
-.blog-page .blog-container,
-.blog-list .blog-list-container {
+.project-page .project-container,
+.project-list .project-list-container {
     left: 10% !important;
 }
 
-.blog-page .blog-nav {
+.project-page .project-nav {
 	left: 55% !important;
 }
 
@@ -57,13 +57,13 @@
 	#about:target .pt-about,
 	#resume:target .pt-resume,
 	#portfolio:target .pt-portfolio,
-	#blog:target .pt-blog,
+	#project:target .pt-project,
 	#contact:target .pt-contact {
 		-webkit-transform: translateX(0%) !important;
 		-ms-transform: translateX(0%) !important;
 		transform: translateX(0%) !important;
 	}
-	.blog-page .blog-container {
+	.project-page .project-container {
 		left: 0 !important;
 	}
 }
